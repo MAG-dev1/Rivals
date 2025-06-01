@@ -1,6 +1,7 @@
 import ProductList from '../components/ProductList';
 import Cart from '../components/Cart';
 import { useState } from 'react';
+import Navbar from '../components/Navbar';
 
 function Home() {
   const [cart, setCart] = useState([]);
@@ -10,7 +11,9 @@ function Home() {
   };
 
   return (
+    
     <div>
+      <Navbar/>
       <ProductList onAdd={handleAddToCart} />
       <Cart items={cart} />
     </div>

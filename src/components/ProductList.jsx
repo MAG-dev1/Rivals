@@ -15,7 +15,7 @@ function ProductList({ onAdd }) {
   if (error) return <p>{error}</p>;
 
   return (
-    <div>
+    <div className='contenedor_carrito'>
       {products.map(p => (
         <ProductCard key={p.id} product={p} onAdd={onAdd} />
       ))}

@@ -3,7 +3,7 @@ import '../css/carrito.css'
 
 function ProductCard({ product, onAdd }) {
   return (
-    <div className='contenedor_carrito'>
+
       <div className='card'>
         <h3>{product.title}</h3>
         <p>${product.price}</p>
@@ -12,7 +12,7 @@ function ProductCard({ product, onAdd }) {
         <Link to={`/product/${product.id}`}>Ver detalle</Link>
       </div>
      
-    </div>
+    
   );
 }
 
